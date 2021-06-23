@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday animation website</title>
+</head>
+<body>
+    <style>
+div {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: green;
+    position: relative;
+    animation-name: movingbox;
+    animation-duration: 10s;
+}
+@keyframes movingbox {
+    0% {background-color: green; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 1250px; top: 0px;}
+    50% {background-color: blue; left: 0px; top: 500px;}
+    75% {background-color: red; left: 1250px; top: 500px;}
+    100% {background-color: green; left: 0px; top: 0px;}
+}
+body {
+    background-color: green;
+    animation-name: back;
+    animation-duration: 10s;
+}
+@keyframes back {
+    from {background-color: green;}
+    to {background-color: yellow;}
+}
+h1 {
+    text-align: center;
+    color: white;
+    animation-name: text;
+    animation-duration: 10s;
+}
+@keyframes text {
+    from {color: yellow;}
+    to {color: green;}
+}
+    </style>
+    <div>
+
+    </div>
+    <h1>Happy Birthday!</h1>
+</body>
+</html>
